@@ -1,0 +1,13 @@
+Source: ros-rolling-rplidar-driver
+Section: misc
+Priority: optional
+Maintainer: "frozenreboot" <frozenreboot@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-cmake-cppcheck <!nocheck>, ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-lint-cmake <!nocheck>, ros-rolling-ament-cmake-xmllint <!nocheck>, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-diagnostic-updater, ros-rolling-geometry-msgs, ros-rolling-lifecycle-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-rclcpp-lifecycle, ros-rolling-sensor-msgs, ros-rolling-tf2, ros-rolling-tf2-geometry-msgs <!nocheck>, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Homepage: https://index.ros.org/p/rplidar_driver/#rolling
+Standards-Version: 3.9.2
+
+Package: ros-rolling-rplidar-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-diagnostic-updater, ros-rolling-geometry-msgs, ros-rolling-launch-ros, ros-rolling-lifecycle-msgs, ros-rolling-rclcpp, ros-rolling-rclcpp-components, ros-rolling-rclcpp-lifecycle, ros-rolling-sensor-msgs, ros-rolling-tf2, ros-rolling-tf2-ros, ros-rolling-ros-workspace
+Description: A modern, lifecycle-managed ROS2 driver for Slamtec RPLidar.
+ Features multithreaded scanning, non-blocking I/O, and C++17 architecture.
