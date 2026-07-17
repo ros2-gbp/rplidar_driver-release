@@ -1,0 +1,13 @@
+Source: ros-humble-rplidar-driver
+Section: misc
+Priority: optional
+Maintainer: "frozenreboot" <frozenreboot@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ament-cmake-cppcheck <!nocheck>, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-cmake-lint-cmake <!nocheck>, ros-humble-ament-cmake-xmllint <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-diagnostic-updater, ros-humble-geometry-msgs, ros-humble-lifecycle-msgs, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclcpp-lifecycle, ros-humble-sensor-msgs, ros-humble-tf2, ros-humble-tf2-geometry-msgs <!nocheck>, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: https://index.ros.org/p/rplidar_driver/#humble
+Standards-Version: 3.9.2
+
+Package: ros-humble-rplidar-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-diagnostic-updater, ros-humble-geometry-msgs, ros-humble-launch-ros, ros-humble-lifecycle-msgs, ros-humble-rclcpp, ros-humble-rclcpp-components, ros-humble-rclcpp-lifecycle, ros-humble-sensor-msgs, ros-humble-tf2, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: A modern, lifecycle-managed ROS2 driver for Slamtec RPLidar.
+ Features multithreaded scanning, non-blocking I/O, and C++17 architecture.
